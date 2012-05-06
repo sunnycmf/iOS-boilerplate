@@ -73,6 +73,7 @@
 		09E442D9141F9DD400AD2DAE /* SwipeableTableViewExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E442D7141F9DD400AD2DAE /* SwipeableTableViewExample.m */; };
 		09E442DA141F9DD400AD2DAE /* SwipeableTableViewExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E442D8141F9DD400AD2DAE /* SwipeableTableViewExample.xib */; };
 		09E442DD141F9E3600AD2DAE /* SwipeableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E442DC141F9E3600AD2DAE /* SwipeableCell.m */; };
+		8CEFB89E15569A060071E488 /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEFB89B155699AF0071E488 /* libQuickDialog.a */; };
 		D8EA24C4145BA49100EB08B3 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA24C0145BA49100EB08B3 /* BrowserViewController.m */; };
 		D8EA24C5145BA49100EB08B3 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8EA24C1145BA49100EB08B3 /* BrowserViewController.xib */; };
 		D8EA24C6145BA49100EB08B3 /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA24C3145BA49100EB08B3 /* MyApplication.m */; };
@@ -92,6 +93,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 09885E8F1418F2E500CCE17A;
 			remoteInfo = IOSBoilerplate;
+		};
+		8CEFB898155699AF0071E488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEFB88F155699AF0071E488 /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
+			remoteInfo = QuickDialogExample;
+		};
+		8CEFB89A155699AF0071E488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEFB88F155699AF0071E488 /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C542393145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+		8CEFB89C155699DB0071E488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEFB88F155699AF0071E488 /* QuickDialog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C542392145ADEBD0026A152;
+			remoteInfo = QuickDialog;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -200,6 +222,7 @@
 		09E442D8141F9DD400AD2DAE /* SwipeableTableViewExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeableTableViewExample.xib; sourceTree = "<group>"; };
 		09E442DB141F9E3600AD2DAE /* SwipeableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeableCell.h; sourceTree = "<group>"; };
 		09E442DC141F9E3600AD2DAE /* SwipeableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeableCell.m; sourceTree = "<group>"; };
+		8CEFB88F155699AF0071E488 /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = QuickDialog/QuickDialog.xcodeproj; sourceTree = "<group>"; };
 		C37BC8E3144C340600423D44 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D8EA24BF145BA49100EB08B3 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
 		D8EA24C0145BA49100EB08B3 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
@@ -222,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEFB89E15569A060071E488 /* libQuickDialog.a in Frameworks */,
 				09507B261459B92800CEBABF /* CoreGraphics.framework in Frameworks */,
 				09270769141E52BB00E778AE /* CoreLocation.framework in Frameworks */,
 				0927075E141E4C7800E778AE /* MapKit.framework in Frameworks */,
@@ -304,6 +328,7 @@
 		09885E931418F2E500CCE17A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CEFB88F155699AF0071E488 /* QuickDialog.xcodeproj */,
 				C37BC8E3144C340600423D44 /* libz.dylib */,
 				09885EEC1418F3F900CCE17A /* CFNetwork.framework */,
 				09270768141E52BB00E778AE /* CoreLocation.framework */,
@@ -474,6 +499,15 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		8CEFB890155699AF0071E488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CEFB899155699AF0071E488 /* QuickDialogExample.app */,
+				8CEFB89B155699AF0071E488 /* libQuickDialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D8EA24BD145BA45C00EB08B3 /* BrowserViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +546,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8CEFB89D155699DB0071E488 /* PBXTargetDependency */,
 			);
 			name = IOSBoilerplate;
 			productName = IOSBoilerplate;
@@ -555,6 +590,12 @@
 			mainGroup = 09885E851418F2E500CCE17A;
 			productRefGroup = 09885E911418F2E500CCE17A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8CEFB890155699AF0071E488 /* Products */;
+					ProjectRef = 8CEFB88F155699AF0071E488 /* QuickDialog.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09885E8F1418F2E500CCE17A /* IOSBoilerplate */,
@@ -562,6 +603,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8CEFB899155699AF0071E488 /* QuickDialogExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = QuickDialogExample.app;
+			remoteRef = 8CEFB898155699AF0071E488 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CEFB89B155699AF0071E488 /* libQuickDialog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQuickDialog.a;
+			remoteRef = 8CEFB89A155699AF0071E488 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09885E8E1418F2E500CCE17A /* Resources */ = {
@@ -685,6 +743,11 @@
 			target = 09885E8F1418F2E500CCE17A /* IOSBoilerplate */;
 			targetProxy = 09885EBA1418F2E600CCE17A /* PBXContainerItemProxy */;
 		};
+		8CEFB89D155699DB0071E488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickDialog;
+			targetProxy = 8CEFB89C155699DB0071E488 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -772,14 +835,19 @@
 		09885EC91418F2E600CCE17A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IOSBoilerplate/IOSBoilerplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -787,12 +855,17 @@
 		09885ECA1418F2E600CCE17A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IOSBoilerplate/IOSBoilerplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
