@@ -36,6 +36,7 @@
 #import "PullDownExample.h"
 #import "SwipeableTableViewExample.h"
 #import "BrowserSampleViewController.h"
+#import "JsonDataSampleController.h"
 
 @implementation RootViewController
 
@@ -73,7 +74,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 5;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -92,6 +93,10 @@
             
         case 3:
             return @"Web Browser";
+            break;
+            
+        case 4:
+            return @"QuickDialog";
             break;
             
         default:
@@ -116,6 +121,10 @@
             break;
             
         case 3:
+            return 1;
+            break;
+            
+        case 4:
             return 1;
             break;
             
@@ -200,6 +209,16 @@
             default:
                 break;
         }
+    } else if (indexPath.section == 4) {
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = @"Hello World";
+                cell.detailTextLabel.text = @"basic hello world apps on quickdialog";
+                break;
+                
+            default:
+                break;
+        }
     }
     
     return cell;
@@ -262,6 +281,15 @@
         switch (indexPath.row) {
             case 0:
                 vc = [[BrowserSampleViewController alloc] init];
+                break;
+                
+            default:
+                break;
+        }
+    } else if (indexPath.section == 4) {
+        switch (indexPath.row) {
+            case 0:
+                vc = [[JsonDataSampleController alloc] init];
                 break;
                 
             default:
